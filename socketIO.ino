@@ -1,6 +1,3 @@
-// remeber to add the last version (master) from repository:
-// https://github.com/timum-viw/socket.io-client
-
 #include <Arduino.h>
 
 #include <WiFi.h>
@@ -58,7 +55,7 @@ void loop(){
     count++;
     if (count == 18000){
         count = 0;
-        
+
         // Send data to Server
         webSocket.emit("status", "Hello from esp32!");
     }
